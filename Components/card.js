@@ -7,6 +7,19 @@ function card({ title, imageurl, body }) {
       <div className="image-container">
         <img src={imageurl} alt="" />
       </div>
+      <div className="card-content">
+        <div className="card-title">
+          <h3>{title}</h3>
+        </div>
+        <div className="card-body">
+          <p>{body}</p>
+        </div>
+      </div>
+      <div className="btn">
+        <button>
+          <a href="https://en.wikipedia.org/wiki/Virat_Kohli">view more</a>
+        </button>
+      </div>
     </div>
   );
 }
